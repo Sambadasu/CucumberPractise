@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="14.755">
+    <testcase classname="Test Google Search Functionality" name="Check Google Search is working" time="9.069">
+        <system-out><![CDATA[Given browser is open.......................................................passed
+And user is on google search page...........................................passed
+When user enters text in search box.........................................passed
+And Clicks on search button.................................................passed
+Then verify results.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login to the application" name="Verify login is successful with valid credentials" time="2.751">
+        <failure message="Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given user is on testlogin page.............................................passed
+When user enters Samba and 12345............................................failed
+And clicks on login or testsubmit button....................................skipped
+Then user nagigates to testhomepage.........................................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at Pages.loginPage.enterUserName(loginPage.java:19)
+	at StepDefinitions.LoginTest.user_enters_username_and_password(LoginTest.java:29)
+	at ✽.user enters Samba and 12345(file:///C:/Users/Nag/Desktop/Samba/Samba_Workspace/CucumberPractise/src/test/resources/Features/LoginTest.feature:6)
+]]></failure>
+    </testcase>
+    <testcase classname="Login to the application" name="Verify login is successful with valid credentials 2" time="2.78">
+        <failure message="Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given user is on testlogin page.............................................passed
+When user enters Ram and 12345..............................................failed
+And clicks on login or testsubmit button....................................skipped
+Then user nagigates to testhomepage.........................................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at Pages.loginPage.enterUserName(loginPage.java:19)
+	at StepDefinitions.LoginTest.user_enters_username_and_password(LoginTest.java:29)
+	at ✽.user enters Ram and 12345(file:///C:/Users/Nag/Desktop/Samba/Samba_Workspace/CucumberPractise/src/test/resources/Features/LoginTest.feature:6)
+]]></failure>
+    </testcase>
+</testsuite>
