@@ -11,8 +11,9 @@ import io.cucumber.junit.CucumberOptions;
 		features="src/test/resources/Features",glue= {"StepDefinitions"},
 		monochrome = true,
 		plugin = {"pretty","junit:target/Reports/SampleXml.xml"},
-		//plugin = {"pretty","json:target/Reports/Sample.json"}
-		tags="@SmokeTest"
+		publish = true,		
+		tags="@CRMTest",
+		dryRun=false
 )
 public class TestRunner 
 {
